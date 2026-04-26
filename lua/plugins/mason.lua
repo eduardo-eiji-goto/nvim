@@ -22,7 +22,15 @@ require("mason-lspconfig").setup({
 	automatic_installation = true,
 })
 
-vim.lsp.config("lua_ls", {})
+vim.lsp.config("lua_ls", {
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { "vim" }, -- Recognize 'vim' as a global variable
+			},
+		},
+	},
+})
 vim.lsp.config("pyright", {})
 vim.lsp.config("gopls", {})
 vim.lsp.config("intelephense", {})

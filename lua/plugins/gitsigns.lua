@@ -8,4 +8,12 @@ require("gitsigns").setup({
 		topdelete = { text = "‾" }, ---@diagnostic disable-line: missing-fields
 		changedelete = { text = "~" }, ---@diagnostic disable-line: missing-fields
 	},
+	on_attach = function(bufnr)
+		local gitsigns = require("gitsigns")
+
+		-- Show last commit and author of the current line in a floating window
+		vim.keymap.set("n", "<leader>gb", function()
+			gitsigns.blame_line({ full = true })
+		end, { buffer = bufnr, desc = "[G]it [B]lame line" })
+	end,
 })

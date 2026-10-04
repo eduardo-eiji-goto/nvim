@@ -3,7 +3,7 @@ vim.g.maplocalleader = " "
 
 require("opts")
 
-require("plugins.catppuccin")
+require("plugins.themes")
 require("plugins.lsp")
 require("plugins.mason")
 require("plugins.conform")

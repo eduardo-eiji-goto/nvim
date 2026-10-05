@@ -36,5 +36,3 @@ vim.lsp.config("gopls", {})
 vim.lsp.config("intelephense", {})
 vim.lsp.config("ts_ls", {})
 vim.lsp.config("eslint", {})
-
-vim.lsp.enable("lua_ls")

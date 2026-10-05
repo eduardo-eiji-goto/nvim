@@ -8,6 +8,9 @@ require("mini.pairs").setup()
 require("mini.completion").setup()
 require("mini.snippets").setup()
 require("mini.notify").setup()
+require("mini.icons").setup()
+MiniIcons.mock_nvim_web_devicons()
+require("mini.move").setup()
 
 require("mini.starter").setup({
 	header = [[Yesterday is history,

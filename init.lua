@@ -5,7 +5,6 @@ require("opts")
 
 require("plugins.themes")
 require("plugins.lsp")
-require("plugins.mason")
 require("plugins.conform")
 require("plugins.telescope")
 require("plugins.mini")

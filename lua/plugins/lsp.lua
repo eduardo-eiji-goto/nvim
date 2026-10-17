@@ -2,6 +2,31 @@ vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 })
 
+-- Server binaries are installed outside Neovim (see PLAN.md) and must be on PATH
+vim.lsp.config("lua_ls", {
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { "vim" }, -- Recognize 'vim' as a global variable
+			},
+		},
+	},
+})
+
+vim.lsp.enable({
+	-- Lua
+	"lua_ls",
+	-- Python
+	"pyright",
+	-- Golang
+	"gopls",
+	-- PHP
+	"intelephense",
+	-- Javascript
+	-- "ts_ls",
+	"eslint",
+})
+
 -- Folding: default to indent, switch to LSP folding ranges when supported
 vim.o.foldmethod = "indent"
 vim.o.foldlevelstart = 99 -- open all folds when opening a file

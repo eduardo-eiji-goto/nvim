@@ -1,0 +1,23 @@
+# Mise Configuration
+
+[tools]
+# Runtimes
+uv = "latest"
+
+# Lua
+"aqua:LuaLS/lua-language-server" = "latest"
+"aqua:JohnnyMorganz/StyLua" = "latest"
+# Python
+"npm:pyright" = "latest"
+"pipx:black" = "latest"
+"pipx:isort" = "latest"
+# Go
+"go:golang.org/x/tools/gopls" = "latest"
+# PHP
+"npm:intelephense" = "latest"
+# JS/TS
+"npm:typescript-language-server" = "latest"
+"npm:typescript" = "latest"
+"npm:vscode-langservers-extracted" = "latest"
+"npm:prettier" = "latest"
+

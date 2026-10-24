@@ -3,6 +3,7 @@
 [tools]
 # Runtimes
 uv = "latest"
+node = "24"
 
 # Lua
 "aqua:LuaLS/lua-language-server" = "latest"
